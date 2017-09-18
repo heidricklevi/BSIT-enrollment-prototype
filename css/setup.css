@@ -1,0 +1,19 @@
+#card-div {
+    top: 50%;
+    left: 20%;
+    margin-top: -20em; /*set to a negative number 1/2 of your height*/
+    /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    position:fixed;
+    width: 60%;
+}
+
+html {
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.progress-header{
+    font-size: large;
+    padding-left: 100px;
+}

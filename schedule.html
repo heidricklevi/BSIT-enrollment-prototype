@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/setup.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Sharla 2.0</title>
+</head>
+<body>
+
+<div class="container">
+    <nav class="nav-extended" style="background-color: #6699CC">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="padding-left: 10px">SHARLA 2.0</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="border-color: #0051BA">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Questions?</a></li>
+                <li><a href="index.html">Sign Out</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Questions?</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1" class="active">Profile</a></li>
+                <li class="tab"><a href="#test2">Schedule</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row" id="test2">
+        <div id="suggested-col" class="col-md-7" style="float: right">
+            <div  class="card">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div  class="collapsible-header white-text active" style="background: #0051BA">
+                            <i class="material-icons"></i>Suggested Schedule for SPR17</div>
+                        <div id="suggested-schedule" class="collapsible-body" style="padding: 20px">
+                            <table class="striped"><thead>
+                            <tr>
+                                <th data-field="id">Course Name</th>
+                                <th>Semester</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Location</th>
+                            </tr></thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>IT 420</td>
+                                    <td>SPR17</td>
+                                    <td>TH</td>
+                                    <td>7:10 - 10:00</td>
+                                    <td>BEST 220</td>
+                                </tr>
+                                <tr>
+                                    <td>IT 492</td>
+                                    <td>SPR17</td>
+                                    <td>T</td>
+                                    <td>7:10 - 10:00</td>
+                                    <td>BEST 225</td>
+                                </tr>
+                                <tr>
+                                    <td>IT 416</td>
+                                    <td>SPR17</td>
+                                    <td>W</td>
+                                    <td>4:00 - 6:50</td>
+                                    <td>BEST 225</td>
+                                </tr>
+                                <tr>
+                                    <td>IT 422</td>
+                                    <td>SPR17</td>
+                                    <td>M</td>
+                                    <td>4:00 - 6:50</td>
+                                    <td>BEST 225</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="yes-no-enroll" style="display: inline-flex; border-bottom-style: solid; border-bottom-width: medium;
+             border-bottom-color: #6699CC">
+
+                <p>Enroll using suggested schedule?</p>
+                <a id="yes" href="#!" class="waves-effect" style="padding-left: 10px">
+                    <i class="material-icons small" style="color: #0051BA">done</i></a>
+                <a id="close" href="#!" class="waves-effect" style="padding-left: 10px; padding-right: 5px">
+                    <i class="material-icons" style="color: red">close</i></a>
+                &nbsp;<div><i>Note: Choosing no means you will need to manually create your schedule</i></div>
+            </div>
+
+            <div class="card">
+                <ul id="manual-col" class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header white-text active" style="background: #0051BA">
+                            <i class="material-icons"></i>Manually Created Schedule for SPR17</div>
+                        <div id="manual-schedule" class="collapsible-body" style="padding: 20px">
+                            <table id="manual-table" class="striped"><thead>
+                            <tr>
+                                <th data-field="id">Course Name</th>
+                                <th>Semester</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Location</th>
+                            </tr></thead>
+
+                                <tbody> 
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="adding-class-tip">
+                <i class="material-icons blue-grey-text">info_outline</i>
+                <i>Tip: Manually create your schedule by adding courses from the course list.</i>
+            </div>
+            <div id="manual-enroll" style="display: inline-flex; float: right">
+                <a id= "man-button" class="waves-effect waves-light btn" style="margin-right: 5%; background-color:#0051BA" >Enroll</a>
+                <a id="man-postpone" class="waves-effect waves-light btn"
+                   style="background: #D3D3D3; color: darkslategray; padding-left: 10px" >Postpone</a>
+
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card">
+                <ul class="collection with-header">
+                    <li class="collection-header" style="background: #0051BA">
+                        <p class="white-text" style="font-size: large; font-weight: 500">Courses - Information Technology</p></li>
+                    <li class="collection-item"><div>IT 310 - Mondays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 320 - Wednesdays from <i>7:10 - 10:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 330 - Mondays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 340 - Thursdays from <i>4:00 - 6:50</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 342 - Mondays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 410 - Tuesdays from <i>7:10 - 10:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 416 - Wednesdays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 420 - Thursdays from <i>4:00 - 6:50</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 422 - Tuesdays from <i>4:00 - 6:50</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 430 - Mondays from <i>4:00 - 6:50</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 450 - Tuesdays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 490 - Wednesdays from <i>6:00 - 9:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                    <li class="collection-item"><div>IT 492 - Mondays from <i>7:10 - 10:00</i>
+                        <a href="#!" class="waves-effect waves-circle secondary-content"><i class="material-icons">add</i></a></div></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+        <div class="row" id="test1">
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="panel panel-info" style="border-color: #0051BA">
+                        <div class="panel-heading" style="background: #0051BA">
+                            <h3 class="panel-title white-text">Student</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-3 " align="center">
+                                    <img alt="User Pic" src="img/avatar.png"
+                                         class="img-circle img-responsive"> </div>
+                                <div class=" col-md-9 col-lg-9 ">
+                                    <table class="table table-user-information">
+                                        <tbody>
+                                        <tr>
+                                            <td>Program:</td>
+                                            <td>BSIT</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Graduation:</td>
+                                            <td>05/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Credit Hour Max/Semester</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><a href="#">student@ku.edu</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8" id="current-sched">
+                <div class="card">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header white-text active" style="background: #0051BA"><i class="material-icons"></i>Current Schedule - Fall 2016</div>
+                            <div class="collapsible-body" style="padding: 20px">
+                                <table class="striped"><thead>
+                                <tr>
+                                    <th data-field="id">Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr></thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>IT 430</td>
+                                    <td>FA16</td>
+                                    <td>M</td>
+                                    <td>7:10 - 10:00</td>
+                                    <td>BEST 220</td>
+                                </tr>
+                                <tr>
+                                    <td>IT 320</td>
+                                    <td>FA16</td>
+                                    <td>T</td>
+                                    <td>7:10 - 10:00</td>
+                                    <td>BEST 225</td>
+                                </tr>
+                                <tr>
+                                    <td>MGMT 305</td>
+                                    <td>FA16</td>
+                                    <td>W</td>
+                                    <td>4:00 - 6:50</td>
+                                    <td>BEST 225</td>
+                                </tr>
+                                </tbody>
+                                </table>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8" id="prev-sched">
+                <div class="card">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header white-text" style="background: #6699CC">
+                                <i class="material-icons" style="font-size: 36px; color: #7CFC00; float: right;">done</i>Schedule - Spring 2016</div>
+                            <div class="collapsible-body" style="padding: 20px">
+                                <table class="striped"><thead>
+                                <tr>
+                                    <th data-field="id">Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr></thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>IT 430</td>
+                                        <td>FA16</td>
+                                        <td>M</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT 320</td>
+                                        <td>FA16</td>
+                                        <td>T</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MGMT 305</td>
+                                        <td>FA16</td>
+                                        <td>W</td>
+                                        <td>4:00 - 6:50</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header white-text" style="background: #6699CC;">
+                                <i class="material-icons" style="font-size: 36px; color: #7CFC00; float: right;">done</i>Schedule - Fall 2015</div>
+                            <div class="collapsible-body" style="padding: 20px">
+                                <table class="striped"><thead>
+                                <tr>
+                                    <th data-field="id">Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr></thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>IT 430</td>
+                                        <td>FA16</td>
+                                        <td>M</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT 320</td>
+                                        <td>FA16</td>
+                                        <td>T</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MGMT 305</td>
+                                        <td>FA16</td>
+                                        <td>W</td>
+                                        <td>4:00 - 6:50</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header white-text" style="background: #6699CC">
+                                <i class="material-icons" style="font-size: 36px; color: #7CFC00; float: right;">done</i></i>Schedule - Spring 2015</div>
+                            <div class="collapsible-body" style="padding: 20px">
+                                <table class="striped"><thead>
+                                <tr>
+                                    <th data-field="id">Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr></thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>IT 430</td>
+                                        <td>FA16</td>
+                                        <td>M</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT 320</td>
+                                        <td>FA16</td>
+                                        <td>T</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MGMT 305</td>
+                                        <td>FA16</td>
+                                        <td>W</td>
+                                        <td>4:00 - 6:50</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header white-text" style="background: #6699CC">
+                                <i class="material-icons" style="font-size: 36px; color: #7CFC00; float: right;">done</i>Schedule - Fall 2014</div>
+                            <div class="collapsible-body" style="padding: 20px">
+                                <table class="striped"><thead>
+                                <tr>
+                                    <th data-field="id">Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr></thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>IT 430</td>
+                                        <td>FA16</td>
+                                        <td>M</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT 320</td>
+                                        <td>FA16</td>
+                                        <td>T</td>
+                                        <td>7:10 - 10:00</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MGMT 305</td>
+                                        <td>FA16</td>
+                                        <td>W</td>
+                                        <td>4:00 - 6:50</td>
+                                        <td>BEST 225</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="js/materialize.js"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

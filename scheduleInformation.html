@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/setup.css" rel="stylesheet" type="text/css">
+
+
+    <title>Sharla 2.0</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8">
+            <div class="card large" id="card-div" >
+                    <div class="card-content white-text" style="background: #0051BA;">
+                        <div style="display: inline-flex; position: relative; font-size: large"><p>Signed in</p>
+                            <div style="padding-left: 25%"><p class="progress-header">Profile</p></div>
+                            <div style="padding-left: 20%"><p class="progress-header">Method</p></div></div>
+                        <div class="progress" style="background: white">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+                                33%
+                            </div>
+                        </div>
+                        <span class="card-title">Profile setup information</span>
+                        <p>By filling out the details below, we can gain insight into the
+                            schedule you need should you let us automatically generate one for you.</p>
+                    </div>
+
+                    <div class="card-content" style="background: lightgray">
+                        <span style="font-size: large; font-weight: 700">Is this your first semester at KU for the BSIT program?</span>
+
+                        <a id="adropdown1" style="font-size: 14px; float: right" class='dropdown-button btn blue-grey' href='#' data-activates='dropdown1'>
+                            <i class="fa fa-caret-down" style=" padding-left: 5px; float: right"></i>Choose</a>
+
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#">Yes</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">No</a></li>
+
+                        </ul>
+
+                    </div>
+                <div class="card-content" style="padding-top: 25px; background: lightgray">
+                    <span style="font-size: large; font-weight: 700">What is the maximum amount of credit hours you will take each semester?</span>
+
+                    <a id="adropdown2" style="font-size: 14px; float: right" class='dropdown-button btn blue-grey' href='#' data-activates='dropdown2'>
+                        <i class="fa fa-caret-down" style=" padding-left: 5px; float: right"></i>Choose</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown2' class='dropdown-content'>
+                        <li><a href="#">0-6</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">9-12</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">15+</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card-content" style="padding-top: 25px; background: lightgray">
+                    <span style="font-size: large; font-weight: 700">Choose the date that you must graduate by:
+                        <input style="float: right; width: 105px;" type="date" id="datepicker">  </span>
+
+                    <div style="padding-top: 30px;">
+                        <a class="btn-floating btn-large waves-effect waves-light blue" style="float: right;" href="classsetup.html">
+                            <i class="fa fa-arrow-right"></i></a></div>
+
+                </div>
+
+                <div class="card-action yellow-text" style="background: lightgray">
+                        <a href="#" style="color: #0051BA">Home</a>
+                        <a href="#" style="color: #0051BA">Sign out</a>
+                        <a href="#" style="color: #0051BA">Questions?</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="js/materialize.js"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
